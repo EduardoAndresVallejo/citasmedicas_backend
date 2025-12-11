@@ -18,7 +18,7 @@ const main = async () => {
 
 app.use(cors({
   origin: [
-    "https://citasmedicas-frontend-five.vercel.app",
+    process.env.FRONTEND_URL,
   ]
 }));
 app.use(morgan('dev'))
