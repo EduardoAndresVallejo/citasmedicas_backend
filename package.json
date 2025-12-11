@@ -1,0 +1,28 @@
+{
+  "name": "apc-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "proyecto de citas",
+  "main": "index.js",
+  "scripts": {
+    "stars": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Joan Reynoso, Jayfry Manuel, Eduardo Vallejo",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.15.3",
+    "nodemailer": "^7.0.10",
+    "resend": "^6.5.2",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
