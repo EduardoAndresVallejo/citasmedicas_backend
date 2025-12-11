@@ -16,21 +16,11 @@ const main = async () => {
   await conectarDB();
 };
 
-const dominiosPermitidos = [process.env.FRONTEND_URL];
-
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (!origin) return callback(null, true);
-
-    if (dominiosPermitidos.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('No permitido por CORS'));
-    }
-  }
-};
-
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://citasmedicas-frontend-five.vercel.app",
+  ]
+}));
 app.use(morgan('dev'))
 main();
 
